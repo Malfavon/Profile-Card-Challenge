@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h1{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(0, 0%, 59%);
+}
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+}
+hr{
+    border: 1px solid hsl(0, 0%, 90%);
+}
+.wrapper{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle1 {
+    overflow: hidden;
+    height: auto;
+    position: absolute;
+}
+.circle1 img{
+    position: absolute;
+}
+.circle2{
+    overflow: hidden;
+    height: auto;
+    position: absolute;
+}
+.circle2 img {
+    position: absolute;
+}
+.card{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    width: 350px;
+    max-width: 75%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 35px 0px hsla(229, 23%, 23%, 0.30);
+    -webkit-box-shadow: 0px 5px 35px 0px hsla(229, 23%, 23%, 0.30);
+}
+.profile-background{
+    background: url(./images/bg-pattern-card.svg);
+    width: 100%;
+    height: 140px;
+    background-size: cover;
+}
+.profile-picture{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.personal-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+.personal-data h1{
+    margin-right: 8px;
+}
+
+.ss-data{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 75px;
+    padding-left: 45px;
+    padding-right: 45px;
+    justify-content: space-between;
+}
+.ss-data p{
+    font-size: 12px;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 375px){
+    .circle1{
+        width: 500px;
+        top: -250px;
+        left: -315px;
+    }
+    .circle2{
+        width: 500px;
+        bottom: -240px;
+        right: -315px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .circle1{
+        width: 675px;
+        top: -255px;
+        left: -255px;
+    }
+    .circle2{
+        width: 675px;
+        bottom: -220px;
+        right: -220px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .circle1{
+        width: 1200px;
+        top: -580px;
+        left: -480px;
+    }
+    .circle2{
+        width: 1200px;
+        bottom: -725px;
+        right: -390px;
+    }
+}
